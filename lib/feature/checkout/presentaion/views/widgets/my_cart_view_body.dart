@@ -1,5 +1,6 @@
 import 'package:checkout_payment/core/utils/app_styles.dart';
 import 'package:checkout_payment/feature/checkout/presentaion/views/widgets/order_info_items.dart';
+import 'package:checkout_payment/feature/checkout/presentaion/views/widgets/total_price.dart';
 import 'package:flutter/material.dart';
 
 class MyCartViewBody extends StatelessWidget {
@@ -13,16 +14,23 @@ class MyCartViewBody extends StatelessWidget {
         children: [
           SizedBox(height:25,),
           Image.asset("assets/images/basket_image.png"),
-          SizedBox(height:25,),
+         const  SizedBox(height:25,),
           OrderInfoItem(title: 'Order Subtotal', value: r'$42.97',),
-          SizedBox(height:4,),
+         const SizedBox(height:4,),
           OrderInfoItem(title: 'Discount', value: r'$0',),
-          SizedBox(height:4,),
+         const SizedBox(height:4,),
           OrderInfoItem(title: 'Shipping', value: r'$8',),
-          
+         const Divider(thickness: 2,height: 50,),
+          TotalPrice(title: 'Total', value: r'$50.97',),
+
+
+
+
         ],
       ),
     );
   }
 }
+
+
 
