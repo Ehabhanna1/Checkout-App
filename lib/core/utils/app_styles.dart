@@ -41,7 +41,7 @@ abstract class AppStyles {
   );
 
   static const TextStyle style22 = TextStyle(
-    color: Colors.black,
+    color: Colors.white,
     fontSize: 22,
     fontFamily: 'Inter',
     fontWeight: FontWeight.w500,

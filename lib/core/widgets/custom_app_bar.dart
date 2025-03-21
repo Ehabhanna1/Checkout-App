@@ -3,10 +3,10 @@
 import 'package:flutter/material.dart' ;
 import 'package:flutter_svg/svg.dart';
 
-AppBar buildAppBar({required String title}) {
+AppBar buildAppBar({ final String? title}) {
     return AppBar(
       backgroundColor: Colors.transparent,
-      title: Text(title,
+      title: Text(title ?? '',
    
       style: AppStyles.style25),
       centerTitle: true,
