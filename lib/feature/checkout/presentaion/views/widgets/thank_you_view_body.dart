@@ -9,52 +9,38 @@ class ThankYouViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: buildAppBar(),
       body: Padding(
-          padding: const EdgeInsets.all(25),
-          child: Stack(
-            clipBehavior: Clip.none,
-            children: [ 
-             const ThankYouCard(),
-      
+        padding: const EdgeInsets.all(25),
+        child: Stack(
+          clipBehavior: Clip.none,
+          children: [
+            const ThankYouCard(),
+
             Positioned(
-              bottom: MediaQuery.sizeOf(context).height * 0.2+20,
+              bottom: MediaQuery.sizeOf(context).height * 0.2 + 20,
               left: 30,
-              right:30,
+              right: 30,
               child: const CustomDasheLine(),
             ),
-      
-      
-      
+
             Positioned(
-        
               bottom: MediaQuery.sizeOf(context).height * 0.2,
               left: -20,
-        
-              child: CircleAvatar(
-              backgroundColor: Colors.white,
-            ),),
+
+              child: CircleAvatar(backgroundColor: Colors.white),
+            ),
             Positioned(
-        
               bottom: MediaQuery.sizeOf(context).height * 0.2,
               right: -20,
-        
-              child: CircleAvatar(
-              backgroundColor: Colors.white,
-            ),),
-            Positioned(
-              top: -50,
-              left: 0,
-              right: 0,
-              child: CustomCheckIcon(),
+
+              child: CircleAvatar(backgroundColor: Colors.white),
             ),
-        
-        
-             ],),
-        
+            Positioned(top: -50, left: 0, right: 0, child: CustomCheckIcon()),
+          ],
+        ),
       ),
     );
   }
 }
-

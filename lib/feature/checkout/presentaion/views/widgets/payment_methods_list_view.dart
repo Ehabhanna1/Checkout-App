@@ -9,10 +9,9 @@ class PaymentMethodListView extends StatefulWidget {
 }
 
 class _PaymentMethodListViewState extends State<PaymentMethodListView> {
-  final List<String> paymentMethods = const[
+  final List<String> paymentMethods = const [
     'assets/images/card.svg',
     'assets/images/paypal.svg',
-   
   ];
 
   int activeIndex = 0;
@@ -24,7 +23,7 @@ class _PaymentMethodListViewState extends State<PaymentMethodListView> {
       child: ListView.builder(
         itemCount: paymentMethods.length,
         scrollDirection: Axis.horizontal,
-        
+
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -39,7 +38,8 @@ class _PaymentMethodListViewState extends State<PaymentMethodListView> {
               ),
             ),
           );
-        },),
+        },
+      ),
     );
   }
 }

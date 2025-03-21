@@ -4,15 +4,15 @@ import 'package:flutter/material.dart';
 class PaymentItemsInfo extends StatelessWidget {
   const PaymentItemsInfo({super.key, required this.title, required this.value});
 
-  final String title , value;
+  final String title, value;
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text(title,style: AppStyles.style18,),
+        Text(title, style: AppStyles.style18),
         Spacer(),
-        Text(value,style: AppStyles.style18,)
+        Text(value, style: AppStyles.style18),
       ],
     );
   }
